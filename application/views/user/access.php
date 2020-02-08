@@ -7,9 +7,18 @@
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
-  <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">User Access</h6>
+
+  <div class="card-header py-3 ">
+    <h6 class="d-sm-flex justify-content-between align-items-center m-0 font-weight-bold text-primary">User Access
+      <a href="access/add" class="d-none d-sm-inline-block btn btn-success btn-icon-split shadow-sm float-right">
+        <span class="icon text-white-50">
+          <i class="fas fa-plus"></i>
+        </span>
+        <span class="text">Add User Access</span>
+      </a>  
+    </h6>
   </div>
+
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
