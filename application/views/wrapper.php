@@ -1,0 +1,10 @@
+<?php
+    $this->load->view('template/header_css');
+    $this->load->view('template/sidebar');
+    $this->load->view('template/content_wrapper_begin');
+    $this->load->view('template/header');
+    $this->load->view('template/content');
+    $this->load->view('template/footer');
+    $this->load->view('template/content_wrapper_end');
+    $this->load->view('template/footer_js.php');
+?>
