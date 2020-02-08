@@ -42,7 +42,7 @@
     <span>User</span></a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="<?php echo base_url('user_access');?>">
+  <a class="nav-link" href="<?php echo base_url('user/access');?>">
   <i class="fas fa-shield-alt"></i>
     <span>User Access</span></a>
 </li>
