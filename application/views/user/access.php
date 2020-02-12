@@ -42,7 +42,7 @@
                 <i class="fas fa-info-circle"></i>
               </a>
 
-              <a href="#" class="btn btn-warning btn-circle btn-sm">
+              <a href="<?php echo base_url('/user/access_edit/').$access->id_user_access ?>" class="btn btn-warning btn-circle btn-sm">
                 <i class="fas fa-edit"></i>
               </a>
 

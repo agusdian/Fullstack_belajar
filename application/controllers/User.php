@@ -64,6 +64,36 @@ class User extends CI_Controller {
         }
     }
 
+    public function access_edit($id_user_access = null) {
+
+        if (!isset($id_user_access)) {
+            redirect('access');
+        }
+       
+        $user_access = $this->user_access;
+
+        $validation = $this->form_validation; 
+        $validation->set_rules($user_access->rules()); 
+
+        if ($validation->run()) {
+            $user_access->update();
+            $this->session->set_flashdata('success', 'Berhasil disimpan');
+            redirect(site_url('user/access'));
+        }
+
+        $data = array(
+            "title" => "Edit User Access",
+            "content" => "user/access_edit",
+            "user_access" => $user_access->getById($id_user_access)
+        );
+
+        if (!$data["user_access"]) {
+            show_404();
+        }
+        
+        $this->load->view("wrapper", $data);
+    }
+
 }
 
 /* End of file User.php */

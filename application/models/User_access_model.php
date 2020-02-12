@@ -49,6 +49,18 @@ class User_access_model extends CI_Model {
         return $this->db->delete($this->table_name,array("id_user_access" => $id_user_access));
     }
 
+    public function update() {
+        $post = $this->input->post();
+        
+        $data = array(
+            "id_user_access" => $post["id_user_access"],
+            "user_access" => $post["user_access"],
+            "description" => $post["description"]
+        );
+
+        $this->db->update($this->table_name, $data, array('id_user_access' => $post['id_user_access']));
+    }
+
     
 }
 
