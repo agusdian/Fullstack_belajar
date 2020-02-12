@@ -9,7 +9,7 @@
 <div class="card shadow mb-4">
   <div class="card-header py-3 ">
     <h6 class="d-sm-flex justify-content-between align-items-center m-0 font-weight-bold text-primary">User Access
-      <a href="<?php base_url()?>/user/access_add" class="d-none d-sm-inline-block btn btn-success btn-icon-split shadow-sm float-right">
+      <a href="<?php base_url()?>/user/access/add" class="d-none d-sm-inline-block btn btn-success btn-icon-split shadow-sm float-right">
         <span class="icon text-white-50">
           <i class="fas fa-plus"></i>
         </span>
@@ -42,11 +42,11 @@
                 <i class="fas fa-info-circle"></i>
               </a>
 
-              <a href="<?php echo base_url('/user/access_edit/').$access->id_user_access ?>" class="btn btn-warning btn-circle btn-sm">
+              <a href="<?php echo base_url('/user/access/edit/').$access->id_user_access ?>" class="btn btn-warning btn-circle btn-sm">
                 <i class="fas fa-edit"></i>
               </a>
 
-              <a href="<?php echo base_url('/user/access_delete/').$access->id_user_access ?>" class="btn btn-danger btn-circle btn-sm">
+              <a href="<?php echo base_url('/user/access/delete/').$access->id_user_access ?>" class="btn btn-danger btn-circle btn-sm">
                 <i class="fas fa-trash"></i>
               </a>
             </td>

@@ -2,15 +2,15 @@
   switch($content) {
     
     case "user/access":
-      $this->load->view('user/access');
+      $this->load->view('user/access/index');
     break;
 
-    case "user/access_add":
-      $this->load->view('user/access_add');
+    case "user/access/add":
+      $this->load->view('user/access/add');
     break;
 
-    case "user/access_edit":
-      $this->load->view('user/access_edit');
+    case "user/access/edit":
+      $this->load->view('user/access/edit');
     break;
     
     default:

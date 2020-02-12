@@ -3,7 +3,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class User_access_model extends CI_Model {
+class Access_model extends CI_Model {
 
     private $table_name = "user_access";
 
@@ -61,7 +61,8 @@ class User_access_model extends CI_Model {
         $this->db->update($this->table_name, $data, array('id_user_access' => $post['id_user_access']));
     }
 
-    
+
+
 }
 
-/* End of file User_access_model.php */
+/* End of file Access_model.php */

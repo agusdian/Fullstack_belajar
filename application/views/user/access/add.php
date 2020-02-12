@@ -2,12 +2,12 @@
   <div class="card shadow mx-auto mb-4" style="width: 45rem;">
     <div class="card-header py-3 text-center">
       <h5 class="d-sm-flex justify-content-between align-items-center m-0 font-weight-bold text-primary ">
-        Add User Access
+        <?php echo $title;?>
       </h5>
     </div>
 
     <div class="card-body">
-      <form action="access_add" method="post">
+      <form action="<?php base_url()?>/user/access/add" method="post">
         <div class="form-group">
           <label>User Access</label>
             <input class="form-control" name="user_access" id="user_access">
